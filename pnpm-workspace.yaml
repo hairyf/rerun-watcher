@@ -3,6 +3,9 @@ packages:
   - docs
   - packages/*
   - examples/*
+catalog:
+  chokidar: ^4.0.3
+  kolorist: ^1.8.0
 catalogs:
   cli:
     '@antfu/eslint-config': ^4.10.1

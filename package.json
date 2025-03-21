@@ -1,18 +1,18 @@
 {
-  "name": "pkg-placeholder",
+  "name": "rerun-watcher",
   "type": "module",
   "version": "0.0.0",
   "packageManager": "pnpm@10.6.2",
-  "description": "_description_",
-  "author": "Anthony Fu <anthonyfu117@hotmail.com>",
+  "description": "Create a rerun watcher using chokidar",
+  "author": "Hairyf <wwu710632@gmail. com>",
   "license": "MIT",
-  "funding": "https://github.com/sponsors/antfu",
-  "homepage": "https://github.com/antfu/pkg-placeholder#readme",
+  "funding": "https://github.com/sponsors/hairyf",
+  "homepage": "https://github.com/hairyf/rerun-watcher#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/antfu/pkg-placeholder.git"
+    "url": "git+https://github.com/hairyf/rerun-watcher.git"
   },
-  "bugs": "https://github.com/antfu/pkg-placeholder/issues",
+  "bugs": "https://github.com/hairyf/rerun-watcher/issues",
   "keywords": [],
   "sideEffects": false,
   "exports": {
@@ -35,6 +35,10 @@
     "test": "vitest",
     "typecheck": "tsc --noEmit",
     "prepare": "simple-git-hooks"
+  },
+  "dependencies": {
+    "chokidar": "catalog:",
+    "kolorist": "catalog:"
   },
   "devDependencies": {
     "@antfu/eslint-config": "catalog:cli",
