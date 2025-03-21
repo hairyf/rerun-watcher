@@ -14,6 +14,8 @@ import {
   log,
 } from './utils'
 
+export type { FSWatcher }
+
 export interface RerunWatcherOptions extends Omit<ChokidarOptions, 'ignored'> {
   name?: string
   ignored?: Matcher[]
