@@ -1,7 +1,7 @@
 {
   "name": "rerun-watcher",
   "type": "module",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "packageManager": "pnpm@10.6.2",
   "description": "Create a rerun watcher using chokidar",
   "author": "Hairyf <wwu710632@gmail. com>",
