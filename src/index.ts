@@ -7,6 +7,7 @@ import process from 'node:process'
 import { fileURLToPath } from 'node:url'
 import { watch } from 'chokidar'
 import { lightGreen, lightMagenta, yellow } from 'kolorist'
+import normalize from 'normalize-path'
 import { createIpcServer } from './server'
 import {
   clearScreen,
@@ -92,7 +93,11 @@ export async function createRerunWatcher(
   }
 
   const reRun = debounce(async (event?: string, filePath?: string) => {
-    const reason = event ? `${event ? lightMagenta(event) : ''}${filePath ? ` in ${lightGreen(`./${filePath}`)}` : ''}` : ''
+    const reasons = [
+      event && lightMagenta(event),
+      filePath && `in ${lightGreen(`./${normalize(filePath)}`)}`,
+    ]
+    const reason = reasons.filter(Boolean).join(' ')
 
     if (waitingChildExit) {
       log(name, reason, yellow('Process hasn\'t exited. Killing process...'))

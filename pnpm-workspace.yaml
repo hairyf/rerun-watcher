@@ -6,6 +6,7 @@ packages:
 catalog:
   chokidar: ^4.0.3
   kolorist: ^1.8.0
+  normalize-path: ^3.0.0
 catalogs:
   cli:
     '@antfu/eslint-config': ^4.10.1
@@ -26,6 +27,7 @@ catalogs:
     yaml: ^2.7.0
   types:
     '@types/node': ^22.13.10
+    '@types/normalize-path': ^3.0.2
   utils:
     tinyexec: ^0.3.2
 onlyBuiltDependencies:

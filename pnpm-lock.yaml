@@ -43,6 +43,9 @@ catalogs:
     kolorist:
       specifier: ^1.8.0
       version: 1.8.0
+    normalize-path:
+      specifier: ^3.0.0
+      version: 3.0.0
   inlined:
     '@antfu/utils':
       specifier: ^9.1.0
@@ -61,6 +64,9 @@ catalogs:
     '@types/node':
       specifier: ^22.13.10
       version: 22.13.10
+    '@types/normalize-path':
+      specifier: ^3.0.2
+      version: 3.0.2
   utils:
     tinyexec:
       specifier: ^0.3.2
@@ -76,6 +82,9 @@ importers:
       kolorist:
         specifier: 'catalog:'
         version: 1.8.0
+      normalize-path:
+        specifier: 'catalog:'
+        version: 3.0.0
     devDependencies:
       '@antfu/eslint-config':
         specifier: catalog:cli
@@ -89,6 +98,9 @@ importers:
       '@types/node':
         specifier: catalog:types
         version: 22.13.10
+      '@types/normalize-path':
+        specifier: catalog:types
+        version: 3.0.2
       bumpp:
         specifier: catalog:cli
         version: 10.1.0
@@ -804,6 +816,9 @@ packages:
 
   '@types/normalize-package-data@2.4.4':
     resolution: {integrity: sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==}
+
+  '@types/normalize-path@3.0.2':
+    resolution: {integrity: sha512-DO++toKYPaFn0Z8hQ7Tx+3iT9t77IJo/nDiqTXilgEP+kPNIYdpS9kh3fXuc53ugqwp9pxC1PVjCpV1tQDyqMA==}
 
   '@types/resolve@1.20.2':
     resolution: {integrity: sha512-60BCwRFOZCQhDncwQdxxeOEEkbc5dIMccYLwbxsS4TUNeVECQ/pBJ0j09mrHOl/JJvpRPGwO9SvE4nR2Nb/a4Q==}
@@ -1973,6 +1988,10 @@ packages:
   normalize-package-data@6.0.2:
     resolution: {integrity: sha512-V6gygoYb/5EmNI+MEGrWkC+e6+Rr7mTmfHrxDbLzxQogBkgzo76rkok0Am6thgSF7Mv2nLOajAJj5vDJZEFn7g==}
     engines: {node: ^16.14.0 || >=18.0.0}
+
+  normalize-path@3.0.0:
+    resolution: {integrity: sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==}
+    engines: {node: '>=0.10.0'}
 
   normalize-range@0.1.2:
     resolution: {integrity: sha512-bdok/XvKII3nUpklnV6P2hxtMNrCboOjAcyBuQnWEhO665FwrSNRxU+AqpsyvO6LgGYPspN+lu5CLtw4jPRKNA==}
@@ -3216,6 +3235,8 @@ snapshots:
       undici-types: 6.20.0
 
   '@types/normalize-package-data@2.4.4': {}
+
+  '@types/normalize-path@3.0.2': {}
 
   '@types/resolve@1.20.2': {}
 
@@ -4712,6 +4733,8 @@ snapshots:
       hosted-git-info: 7.0.2
       semver: 7.7.1
       validate-npm-package-license: 3.0.4
+
+  normalize-path@3.0.0: {}
 
   normalize-range@0.1.2: {}
 

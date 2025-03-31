@@ -41,13 +41,15 @@
   },
   "dependencies": {
     "chokidar": "catalog:",
-    "kolorist": "catalog:"
+    "kolorist": "catalog:",
+    "normalize-path": "catalog:"
   },
   "devDependencies": {
     "@antfu/eslint-config": "catalog:cli",
     "@antfu/ni": "catalog:cli",
     "@antfu/utils": "catalog:inlined",
     "@types/node": "catalog:types",
+    "@types/normalize-path": "catalog:types",
     "bumpp": "catalog:cli",
     "eslint": "catalog:cli",
     "lint-staged": "catalog:cli",
