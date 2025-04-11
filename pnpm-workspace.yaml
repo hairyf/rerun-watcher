@@ -4,7 +4,7 @@ packages:
   - packages/*
   - examples/*
 catalog:
-  chokidar: ^4.0.3
+  chokidar: ^3.6.0
   kolorist: ^1.8.0
   normalize-path: ^3.0.0
 catalogs:

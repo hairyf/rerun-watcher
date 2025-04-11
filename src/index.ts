@@ -1,4 +1,4 @@
-import type { ChokidarOptions, FSWatcher, Matcher } from 'chokidar'
+import type { FSWatcher, WatchOptions } from 'chokidar'
 /* eslint-disable ts/no-use-before-define */
 import type { ChildProcess } from 'node:child_process'
 import { constants as osConstants } from 'node:os'
@@ -17,9 +17,9 @@ import {
 
 export type { FSWatcher }
 
-export interface RerunWatcherOptions extends Omit<ChokidarOptions, 'ignored'> {
+export interface RerunWatcherOptions extends Omit<WatchOptions, 'ignored'> {
   name?: string
-  ignored?: Matcher[]
+  ignored?: (string | RegExp | ((testString: string) => boolean))[]
 }
 
 export async function createRerunWatcher(
